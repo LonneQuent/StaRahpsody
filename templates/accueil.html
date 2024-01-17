@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POEM GENERATOR </title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- <script>
+        $(document).ready(function () {
+            $('#saga').change(function () {
+                var selectedSaga = $('#saga').val();
+        
+                $.ajax({
+                    type: 'POST',
+                    url: 'update_characters.php',
+                    data: { saga: selectedSaga },
+                    success: function (response) {
+                        $('#characters').html(response);
+                    }
+                });
+            });
+        });
+        
+        
+    </script> -->
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1> Starhapsody </h1>
+            <div class="input-box">
+                <select name="saga" id="saga">
+                    <option value="desactive_1" disabled>Sélectionner l'univers dans lequel vous voulez plonger </option>
+                    <option value="Star_Wars" id="monInput3">Star Wars</option>
+                    <option value="Harry_Potter" id="monInput3">Harry Potter</option>
+                    <option value="Seigneur_des_anneaux" id="monInput3">Seigneur des anneaux</option>
+                </select>
+            </div>
+            
+            <button type="button" class="btn" onclick="redirectPage()"> Valider </button>
+
+        </form>
+
+
+        <script>
+            function redirectPage() {
+                var selectedSaga = document.getElementById('saga').value;
+                var destinationPage = "";
+
+                switch (selectedSaga) {
+                    case "Star_Wars":
+                        destinationPage = "S-W_page.html";
+                        break;
+                    case "Harry_Potter":
+                        destinationPage = "H-P_page.html";
+                        break;
+                    case "Seigneur_des_anneaux":
+                        destinationPage = "S-A_page.html";
+                        break;
+                    default:
+                        // Gestion du cas par défaut
+                        break;
+                }
+
+                if (destinationPage !== "") {
+                    window.location.href = destinationPage;
+                }
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>

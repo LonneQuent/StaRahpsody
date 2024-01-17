@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POEM GENERATOR </title>
+    <link rel="stylesheet" href="style_S-W.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="/traiter_formulaire" method="post">
+
+            <h1>MOMO LA BOLOSSE</h1>
+            
+            <label for="monInput3">Sélectionner un personnage de l'univers de Star Wars</label>
+
+            <div class="input-box">
+                <select name="perso_1" id="perso_1">
+                    <option value="desactive_2" disabled>Sélectionner un personnage </option>
+                    <option value="Jar_Jar_Binks" id="monInput1">Jar Jar Binks</option>
+                    <option value="Yoda" id="monInput1">Yoda</option>
+                    <option value="Vador" id="monInput1">Vador</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <select name="type_poeme" id="type_poeme">
+                    <option value="desactive_2" disabled>Sélectionner un type de poeme </option>
+                    <option value="Sonnet" id="monInput2">Sonnet</option>
+                    <option value="Haiku" id="monInput2">Haiku</option>
+                    <option value="Ballade" id="monInput2">Ballade</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn"> Valider </button>
+
+        </form>
+    </div>
+</body>
+
+</html>

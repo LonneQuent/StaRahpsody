@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('peakpx.jpg') no-repeat;
+    background: url('S-W.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     }
@@ -67,27 +67,6 @@ top: 50%;
 transform: translateY(-50%);
 font-size: 20px;
 }
-
-/* .wrapper .remember-forgot {
-display: flex;
-justify-content: space-between;
-font-size: 14.5px;
-margin: -15px 0 15px;
-}
-
-
-.remember-forgot label input {
-accent-color: #fff;
-margin-right: 3px;
-}
-
-.remember-forgot a{
-color: #fff;
-text-decoration: none;
-}
-
-.remember-forgot a */
-
 
 .wrapper .btn {
     width: 100%;
