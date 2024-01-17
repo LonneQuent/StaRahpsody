@@ -8,5 +8,5 @@ Que vous soyez fans de Star Wars, le Seigneur des Anneaux ou Harry Potter, déco
 Voici l'architecture de l'application : 
 
 <p align="center">
-    <img src="image/architecture_cloud.png" height="1028">
+    <img src="image/archi_appli_cloud.png" height="1028">
 </p>
