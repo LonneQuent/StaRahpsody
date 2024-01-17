@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='page_css.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Seigneur des anneaux</h1>
+    <div>
+        <form action="/traiter_formulaire" method="post">
+            <ul class="list_input">
+                <li>
+                    <label for="monInput3">Vous etes dans l'univers de :</label>
+                    <input type="text" id="monInput3" name="monInput3" value="Seigneur des anneaux">
+                </li>
+                <li>
+                    <label for="monInput1">Choisissez parmi Azog, Legolas ou Gimli : </label>
+                    <input type="text" id="monInput1" name="monInput1">
+                </li>
+                <li>
+                    <label for="monInput2">Choisissez parmi Sonnet, Haiku ou Ballade : </label>
+                    <input type="text" id="monInput2" name="monInput2">
+                </li>
+            </ul>
+            <input type="submit" value="Envoyer">
+        </form>          
+    </div>
+</body>
+</html>
