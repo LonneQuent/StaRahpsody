@@ -1,9 +1,5 @@
 ## Générateur de poèmes basé sur les sagas
-
-import cohere
-import tiktoken
 import openai
-import os
 from openai import OpenAI
 
 client = OpenAI(api_key='votre_clé_API')
