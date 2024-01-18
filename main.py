@@ -25,6 +25,7 @@ def traiter_formulaire():
     valeur_input2 = request.form.get('monInput2')
     valeur_input3 = request.form.get('monInput3')
     return f'Voici le poème : {gps.generateur_poeme(input_1=valeur_input1,input_2=valeur_input2,input_3=valeur_input3)}'
+    
 
 if __name__ == '__main__':
     app.run(debug=True)
