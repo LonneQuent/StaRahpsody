@@ -1,5 +1,6 @@
 from openai import OpenAI
 
+
 def generateur_poeme(input_1,input_2,input_3):
     client = OpenAI(api_key='cles ici')
 
