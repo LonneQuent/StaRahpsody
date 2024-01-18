@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POEM GENERATOR </title>
-    <link rel="stylesheet" href="style_S-W.css">
+    <title>POEME GENERATOR </title>
+    <link rel="stylesheet" href="static/style_S-W.css">
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
@@ -16,29 +16,33 @@
     <div class="wrapper">
         <form action="/traiter_formulaire" method="post">
 
-            <h1>MOMO LA BOLOSSE</h1>
+            <h2>Vous etes dans l'univers de Star Wars </h2>
+
+            <br>
             
-            <label for="monInput3">Sélectionner un personnage de l'univers de Star Wars</label>
-
-            <div class="input-box">
-                <select name="perso_1" id="perso_1">
-                    <option value="desactive_2" disabled>Sélectionner un personnage </option>
-                    <option value="Jar_Jar_Binks" id="monInput1">Jar Jar Binks</option>
-                    <option value="Yoda" id="monInput1">Yoda</option>
-                    <option value="Vador" id="monInput1">Vador</option>
-                </select>
+            <div class="input-box" style="display: none;">
+                <label for="monInput3">Vous etes dans l'univers de :</label>
+                <input type="text" id="monInput3" name="monInput3" value="Star Wars" pattern="Star Wars" required>
             </div>
 
+            <br>
+
             <div class="input-box">
-                <select name="type_poeme" id="type_poeme">
-                    <option value="desactive_2" disabled>Sélectionner un type de poeme </option>
-                    <option value="Sonnet" id="monInput2">Sonnet</option>
-                    <option value="Haiku" id="monInput2">Haiku</option>
-                    <option value="Ballade" id="monInput2">Ballade</option>
-                </select>
+                <label for="monInput1">Saisissez soit Jar_Jar_Binks, Yoda ou Vador : </label>
+                <input type="text" id="monInput1" name="monInput1" pattern="Jar_Jar_Binks|Yoda|Vador" title="Veuillez saisir Jar_Jar_Binks ou Yoda ou Vador" required>
             </div>
 
-            <button type="submit" class="btn"> Valider </button>
+            <br>
+            
+            <div class="input-box">
+                <label for="monInput2">Saisissez soit Sonnet, Haiku ou Ballade : </label>
+                <input type="text" id="monInput2" name="monInput2" pattern="Sonnet|Haiku|Ballade" title="Veuillez saisir Sonnet ou Haiku ou Ballade" required>           
+            </div>
+
+
+            <br>
+
+            <input type="submit" value="Envoyer">
 
         </form>
     </div>
