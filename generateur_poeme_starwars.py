@@ -1,9 +1,4 @@
-import cohere
-import tiktoken
-import openai
-import os
 from openai import OpenAI
-import pandas as pd
 
 def generateur_poeme(input_1,input_2,input_3):
     client = OpenAI(api_key='cles ici')
