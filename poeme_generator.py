@@ -3,7 +3,7 @@ import os
 from openai import OpenAI
 
 def generateur_poeme(input_1,input_2,input_3):
-    client = OpenAI(api_key=os.environ.getenv("api-key-gpt"))
+    client = OpenAI(api_key=os.environ.getenv("API_KEY_GPT"))
 
     #On utilise l'API de ChatGPT comme générateur de poème en lui donnant les instructions sélectionnées précédemment.
     chat_completion = client.chat.completions.create(
