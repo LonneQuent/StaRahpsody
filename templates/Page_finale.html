@@ -4,47 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StaRhapsody</title>
-    <style>
-        *{
-            margin: 0;
-            padding : 0;
-            box-sizing: border-box;
-            font-family: "Poppins", sans-serif;
-        }
+    <link rel="stylesheet" href="static/page_finale_style.css">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
 
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background-color: black;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .wrapper {
-            width: 420px;
-            background: transparent;
-            border: 2px solid rgba(255, 255, 255,.2);
-            backdrop-filter: blur(20px);
-            box-shadow:0 0 10px rgba(0, 0, 0,.2);
-            color: #fff;
-            border-radius: 10px;
-            padding: 30px 40px;
-        }
-
-        .wrapper h1 {
-            font-size: 36px;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .p {
-            font-size : 10px;
-            text-align: center;
-        }
-
-    </style>
     
     <script>
         // Fonction pour mettre à jour le fond en fonction de l'univers
@@ -80,7 +42,6 @@
 
     <script>
         // Récupérer le poème depuis Python (remplacez ce texte par le véritable poème généré)
-        //var poeme = "Ceci est le poème généré par votre script Python.";
 
         // Afficher le poème dans l'élément avec l'ID "poemeContainer"
         document.getElementById("poemeContainer").innerText = poeme;

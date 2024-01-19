@@ -31,7 +31,7 @@ def traiter_formulaire():
     
     final = f'Voici le poème : {gps.generateur_poeme(input_1=valeur_input1,input_2=valeur_input2,input_3=valeur_input3)}'
     univers = valeur_input3
-    return render_template('Page_final.html', final = final,  univers = univers)
+    return render_template('Page_finale.html', final = final,  univers = univers)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=80)

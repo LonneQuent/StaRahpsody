@@ -18,7 +18,8 @@ body {
     }
 
 .wrapper {
-width: 420px;
+width: 550px;
+height : 320px;
 background: transparent;
 border: 2px solid rgba(255, 255, 255,.2);
 backdrop-filter: blur(20px);
@@ -51,7 +52,7 @@ border: 2px solid rgba(255, 255, 255,.2);
 border-radius: 40px;
 font-size: 16px;
 color: #fff;
-padding: 20px 45px 20px 20px;
+padding: 10px 35px 10px 20px;
 }
 
 
@@ -69,15 +70,27 @@ font-size: 20px;
 }
 
 .wrapper .btn {
-    width: 100%;
+    width: 20%;
     height: 45px;
-    background: #fff;
     border: none;
     outline: none;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
-    color: #333;
+    color: #fff;
     font-weight: 600;
+    
+}
+
+button.submit-btn{
+    position: absolute;
+    right: 120px;
+    background: #ed2020;
+}
+
+button.return-btn{
+    position: absolute;
+    right: 305px;
+    background: #ca81e0;
 }

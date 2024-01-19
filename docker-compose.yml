@@ -1,0 +1,13 @@
+version: '3'
+
+services: 
+  web:
+    build: .
+    command: python main.py
+    ports:
+      - "80:80"
+    restart: always
+    volumes: 
+      - ./static/pwa/icon:/app/static/pwa/icon
+    env_file:
+      - .env
