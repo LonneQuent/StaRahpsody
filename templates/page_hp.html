@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='page_css.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Harry Potter</h1>
+    <div>
+        <form action="/traiter_formulaire" method="post">
+            <ul class="list_input">
+                <li>
+                    <label for="monInput3">Vous etes dans l'univers de :</label>
+                    <input type="text" id="monInput3" name="monInput3" value="Harry Potter" pattern="Harry Potter" required>
+                </li>
+                <li>
+                    <label for="monInput1">Choisissez parmi Gryffondor, Poufsouffle, Serdaigle ou Serpentard : </label>
+                    <input type="text" id="monInput1" name="monInput1" pattern="Gryffondor|Poufsouffle|Serdaigle|Serpentard" title="Veuillez saisir Gryffondor ou Poufsouffle ou Serdaigle ou Serpentard" required>
+                </li>
+                <li>
+                    <label for="monInput2">Choisissez parmi Sonnet, Haiku ou Ballade : </label>
+                    <input type="text" id="monInput2" name="monInput2" pattern="Sonnet|Haiku|Ballade" title="Veuillez saisir Sonnet ou Haiku ou Ballade" required>
+                </li>
+            </ul>
+            <input type="submit" value="Envoyer">
+        </form>          
+    </div>
+</body>
+</html>

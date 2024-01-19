@@ -1,0 +1,19 @@
+.title{
+    color: rgb(13, 0, 255);
+    margin-left: 40%;
+}
+
+header {
+    border: 3px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* pour que notre nav descende avec la page */
+    top: 0; /* a partir d'ou la nav va descendre avec sticky */
+    background-color: rgb(160, 188, 241);
+}
+
+.list_input li{
+    margin-bottom: 20px;
+}
