@@ -1,6 +1,5 @@
 from flask import Flask, render_template, render_template, request
 import poeme_generator as gps
-
 app = Flask(__name__)
 
 @app.route('/')
@@ -19,6 +18,7 @@ def page_hp():
 def page_lor():
     return render_template('S-A_page.html')
 
+
 @app.route('/traiter_formulaire', methods=['POST'])
 def traiter_formulaire():
     valeur_input1 = request.form.get('monInput1')
@@ -35,3 +35,4 @@ def traiter_formulaire():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=80)
+

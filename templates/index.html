@@ -1,0 +1,27 @@
+<!-- templates/index.html -->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='page_css.css') }}">
+    <title>générateur poème</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Starhapsody</h1>
+    </header>
+    <section>
+        <div>
+            <h3>Bienvenu dans notre régénateur de poème</h3>  
+            <ul class="list_input">
+                <p>Choisissez votre Saga :</p>
+                <li><a href="page_sw.html">Starw Wars</a></li>
+                <li><a href="page_hp.html">Harry Potter</a></li>
+                <li><a href="page_lor.html">Seigneur des anneaux</a></li>
+            </ul> 
+        </div>
+    </section>
+</body>
+</html>
