@@ -9,3 +9,5 @@ services:
     restart: always
     volumes: 
       - ./static/pwa/icon:/app/static/pwa/icon
+    env_file:
+      - .env
