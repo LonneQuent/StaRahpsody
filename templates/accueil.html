@@ -5,8 +5,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POEM GENERATOR </title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>StaRhapsody</title>
+    <style>
+        *{
+            margin: 0;
+            padding : 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url("fond_accueil.jpg"); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .wrapper {
+            width: 420px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255,.2);
+            backdrop-filter: blur(20px);
+            box-shadow:0 0 10px rgba(0, 0, 0,.2);
+            color: #fff;
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+
+        .wrapper h1 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .wrapper h2 {
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .wrapper p {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            font-size: 15px;
+            margin-bottom: 20px;
+
+        }
+
+        .list_input {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        .list_input li a {
+            text-decoration: none; /* Supprimer la décoration de lien par défaut */
+            color: #ffffff; /* Couleur du texte pour les liens */
+        }
+
+
+        .list_input li {
+            width: 250px; /* Définir une largeur fixe pour tous les boutons */
+            margin: 10px auto; /* Centrer et ajouter un espacement vertical entre les boutons */
+            padding: 10px 0; /* Ajuster la marge intérieure pour centrer le texte */
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            border: 2px solid #ffffff;
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+    </style>
+
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 
@@ -16,18 +97,15 @@
 <body>
     <div class="wrapper">
         <form action="/traiter_formulaire" method="post">
-            <h1> Starhapsody </h1>
+            <h1> Bienvenue dans StaRhapsody !</h1>
             <div class="input-box">
-                <h3>Bienvenu dans notre régénateur de poème</h3>  
                 <ul class="list_input">
-                    <p>Choisissez votre Saga :</p>
-                    <li><a href="S-W_page.html">Starw Wars</a></li>
+                    <p>Choisissez une saga :</p>
+                    <li><a href="S-W_page.html">Star Wars</a></li>
                     <li><a href="H-P_page.html">Harry Potter</a></li>
-                    <li><a href="S-A_page.html">Seigneur des anneaux</a></li>
+                    <li><a href="S-A_page.html">Le Seigneur des anneaux</a></li>
                 </ul> 
             </div>
-            
-            <button type="button" class="btn" onclick="redirectPage()"> Valider </button>
 
         </form>
 
