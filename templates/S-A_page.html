@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POEME GENERATOR </title>
+    <link rel="stylesheet" href="static/style_S-A.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="/traiter_formulaire" method="post">
+
+            <h2>Vous etes dans l'univers du Seigneur des Anneaux </h2>
+
+            <br>
+            
+            <div class="input-box" style="display: none;">
+                <label for="monInput3">Vous etes dans l'univers de :</label>
+                <input type="text" id="monInput3" name="monInput3" value="Seigneur des anneaux" pattern="Seigneur des anneaux" required>
+            </div>
+
+            <br>
+
+            <div class="input-box">
+                <label for="monInput1">Saisissez soit Azog, Legolas ou Gimli : </label>
+                <input type="text" id="monInput1" name="monInput1" pattern="Azog|Legolas|Gimli" title="Veuillez saisir Azog ou Legolas ou Gimli" required>
+            </div>
+
+            <br>
+            
+            <div class="input-box">
+                <label for="monInput2">Saisissez soit Sonnet, Haiku ou Ballade : </label>
+                <input type="text" id="monInput2" name="monInput2" pattern="Sonnet|Haiku|Ballade" title="Veuillez saisir Sonnet ou Haiku ou Ballade" required>           
+            </div>
+
+            <br>
+
+            
+            <button type="submit" class="btn submit-btn"> Valider </button>
+
+            <a href="/">
+                <button type="button" class="btn return-btn"> Retour </button>
+            </a>
+
+        </form>
+    </div>
+</body>
+
+</html>

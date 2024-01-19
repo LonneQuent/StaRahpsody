@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StaRhapsody</title>
+    <link rel="stylesheet" href="static/page_finale_style.css">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+    
+    <script>
+        // Fonction pour mettre à jour le fond en fonction de l'univers
+        function updateBackground() {
+            // Récupérer la valeur de l'univers
+            var univers = {{univers}};
+    
+            // Mettre à jour le fond en fonction de la valeur de l'univers
+            document.body.style.backgroundImage = getBackgroundImage(univers);
+        }
+
+        // Fonction pour obtenir l'image de fond en fonction de l'univers
+        function getBackgroundImage(univers) {
+            switch (univers) {
+                case "Star Wars":
+                    return 'url("static/S-W.jpg")'; 
+                case "Harry Potter":
+                    return 'url("static/H-P.jpg")';
+                case "Seigneur des anneaux":
+                    return 'url("static/S-A.jpg")';
+            }
+        }
+
+        // Appeler la fonction au chargement de la page
+        window.onload = updateBackground;
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Voici ton poème</h1>
+        <p id="poemeContainer"> {{final}} </p>
+    </div>
+
+    <script>
+        // Récupérer le poème depuis Python (remplacez ce texte par le véritable poème généré)
+
+        // Afficher le poème dans l'élément avec l'ID "poemeContainer"
+        document.getElementById("poemeContainer").innerText = poeme;
+    </script>
+</body>
+</html>

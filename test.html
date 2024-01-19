@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix d'article et couleur</title>
+    <script>
+        function updateCouleurs() {
+            var articleSelect = document.getElementById("article");
+            var couleurSelect = document.getElementById("couleur");
+            var selectedArticle = articleSelect.value;
+
+            // Effacer les options actuelles
+            couleurSelect.innerHTML = "";
+
+            // Ajouter de nouvelles options en fonction du choix de l'article
+            if (selectedArticle === "jean") {
+                couleurSelect.add(new Option("Yoda", "yoda"));
+                couleurSelect.add(new Option("Vador", "vador"));
+            } else if (selectedArticle === "pantalon") {
+                couleurSelect.add(new Option("Gryffondor", "gryffondor"));
+                couleurSelect.add(new Option("Serpentard", "serpentard"));
+            } else if (selectedArticle === "robe") {
+                couleurSelect.add(new Option("Azog", "azog"));
+                couleurSelect.add(new Option("Legolas", "legolas"));
+            }
+
+            // Afficher la liste déroulante des couleurs une fois qu'un article est choisi
+            couleurSelect.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+<form>
+    <label for="poeme">Choisissez un type de poeme :</label>
+    <select id="poeme" name="poeme">
+        <option value="" selected disabled>Choisissez un poeme</option>
+        <option value="Sonnet">Sonnet</option>
+        <option value="Haiku">Haiku</option>
+        <option value="Ballade">Ballade</option>
+    </select>
+
+    <br>
+
+    <label for="article">Choisissez un article :</label>
+    <select id="article" name="article" onchange="updateCouleurs()">
+        <option value="" selected disabled>Choisissez un article</option>
+        <option value="jean">Star Wars</option>
+        <option value="pantalon">Harry Potter</option>
+        <option value="robe">Seigneur des anneaux</option>
+    </select>
+
+    <br>
+
+    <label for="couleur" style="display: none;">Choisissez une couleur :</label>
+    <select id="couleur" name="couleur" style="display: none;">
+        <!-- Les options de couleur seront ajoutées dynamiquement par JavaScript -->
+    </select>
+
+    <br>
+
+    <input type="submit" value="Valider">
+</form>
+
+</body>
+</html>
